@@ -12,5 +12,6 @@ object StreamSample {
       words.map(word => (word,1)).reduceByKey(_+_).saveAsTextFiles("/Users/Akhil/StreamingOut/Out")
       sc.start()
       sc.awaitTermination()
+       //Test comment
   }
 }
